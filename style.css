@@ -164,18 +164,51 @@ header .button-1:hover {
   height: 60%;
 }
 
-.footer-wrapper {
+footer {
   background-color: darkgray;
   margin-top: 20px;
+  height: 23vh;
 }
-.footer-wrapper .undersidan-footer ul {
-  list-style: none;
-}
-.footer-wrapper .undersidan-footer ul li {
+footer .footer-wrapper {
   display: flex;
   flex-direction: row;
+  width: 80%;
+  justify-content: space-around;
+  margin: auto;
+  gap: 10px;
+  position: relative;
+}
+footer .footer-wrapper .logo-footer img {
+  width: 40%;
+  position: absolute;
+  left: 10px;
+  bottom: 35px;
+}
+footer .footer-wrapper .undersidan-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+footer .footer-wrapper .undersidan-footer ul {
+  list-style: none;
+}
+footer .footer-wrapper .undersidan-footer ul li {
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
 }
-.footer-wrapper .undersidan-footer ul a {
+footer .footer-wrapper .undersidan-footer ul a {
   text-decoration: none;
+  font-family: inherit;
+  color: #060606;
+  font-size: 1rem;
+  font-weight: 500px;
+}
+footer .text-footer {
+  margin-top: 100px;
+  text-align: center;
+  margin: auto;
+  color: red;
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */
