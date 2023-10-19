@@ -16,12 +16,13 @@
     font-family: 'Barlow', sans-serif;
 }
 
-
 .container-main{
     width: 100%;
-    
     margin: 0px auto;
     overflow: hidden;
+    margin-top: 0;
+    padding-top: 0;
+    box-sizing: border-box;
    
 }
 header{
@@ -30,15 +31,14 @@ header{
     background-size:cover;
     background-position:30%;
     height:100vh;
-    
-    
-    
+  
+  
     h1{
       color: #fff;
       position: absolute;
       margin-top:60px;
       margin-left: 23px;
-        font-size:2rem;
+      font-size:2rem;
         
 
         .normal{
@@ -49,16 +49,12 @@ header{
         
         .bigger{
             font-size: 3rem;
-            font-weight: 400;
-            
-            
-           
+            font-weight: 400;     
         }
         .smaller{
             font-size:1.2rem;
             font-weight: 200;
             font-style: italic;
-           
         }
         .medium{
           font-size:2.4rem;
@@ -76,12 +72,10 @@ header{
         justify-content: space-between;
         overflow: hidden;
         align-items: center;
-
+      
         .logo{
           margin-left: 18px;
           width:110px;
-          
-
         }
         
         
@@ -304,7 +298,7 @@ header{
 footer{
   background-color: darkgray;
   margin-top: 20px;
-  height:40vh;
+  height:300px;
 
 
 .footer-wrapper{

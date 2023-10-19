@@ -13,6 +13,9 @@
   width: 100%;
   margin: 0px auto;
   overflow: hidden;
+  margin-top: 0;
+  padding-top: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -228,7 +231,7 @@ header .button-1:hover {
 footer {
   background-color: darkgray;
   margin-top: 20px;
-  height: 40vh;
+  height: 300px;
 }
 footer .footer-wrapper {
   display: flex;
