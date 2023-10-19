@@ -2,7 +2,9 @@
 
 
 
-  @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 
 *{
     margin: 0;
@@ -10,8 +12,7 @@
     box-sizing: border-box;
     font-size: 16px;
     justify-content: center;
-
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Barlow', sans-serif;
 }
 
 
@@ -176,6 +177,58 @@ header{
 }
 
 .container-main{
+ 
+  .om-oss-title{
+    p{
+      text-align: center;
+      margin-top: 50px;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    
+  }
+  .om-oss-wrapper{
+    
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    align-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+   
+    
+    .om-oss-img{
+      img{
+        width:90%;
+        border-radius: 200px;
+        
+      }
+    }
+    .om-oss-text{
+      
+      width: 80%;
+      min-width: 50%;
+
+      p{
+        font-size: 1rem;
+      }
+
+    }
+  }
+
+  .service-title{
+    p{
+      text-align: center;
+      
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+  
 
     
 
