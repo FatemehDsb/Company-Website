@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -133,11 +134,25 @@ header .button-1:hover {
   background-color: rgb(162, 0, 255);
 }
 
+.container-main {
+  margin-top: 30px;
+}
+.container-main .om-oss-title {
+  background-color: rgba(0, 255, 255, 0.203);
+  width: 70%;
+  border-radius: 20px;
+  position: relative;
+  left: 200px;
+  height: 50px;
+  margin-bottom: 20px;
+}
 .container-main .om-oss-title p {
-  text-align: center;
-  margin-top: 50px;
+  text-align: left;
+  padding-left: 25px;
+  padding-top: 9px;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
 }
 .container-main .om-oss-wrapper {
   width: 95%;
@@ -161,10 +176,23 @@ header .button-1:hover {
 .container-main .om-oss-wrapper .om-oss-text p {
   font-size: 1rem;
 }
+.container-main .service-title {
+  background-color: rgba(198, 122, 249, 0.203);
+  width: 70%;
+  border-radius: 20px;
+  position: relative;
+  right: 100px;
+  height: 50px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+}
 .container-main .service-title p {
-  text-align: center;
+  text-align: right;
+  padding-right: 25px;
+  padding-top: 9px;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
 }
 .container-main .service-wrapper {
   margin-top: 20px;
@@ -180,7 +208,7 @@ header .button-1:hover {
   width: 40%;
   height: 150px;
   border-radius: 10px;
-  background-color: rgba(186, 134, 232, 0.142);
+  background-color: rgba(194, 194, 194, 0.142);
   margin: 0 20px;
   display: flex;
   flex-direction: column;
@@ -200,28 +228,22 @@ header .button-1:hover {
 footer {
   background-color: darkgray;
   margin-top: 20px;
-  height: 23vh;
+  height: 40vh;
 }
 footer .footer-wrapper {
   display: flex;
-  flex-direction: row;
-  width: 80%;
+  flex-direction: column;
+  width: 100%;
   justify-content: space-around;
   margin: auto;
-  gap: 10px;
-  position: relative;
+  padding: 10px;
+  padding-left: 40px;
 }
 footer .footer-wrapper .logo-footer img {
-  width: 40%;
-  position: absolute;
-  left: 10px;
-  bottom: 35px;
+  max-width: 100px;
 }
 footer .footer-wrapper .undersidan-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 footer .footer-wrapper .undersidan-footer ul {
   list-style: none;
@@ -230,18 +252,19 @@ footer .footer-wrapper .undersidan-footer ul li {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  gap: 6px;
 }
 footer .footer-wrapper .undersidan-footer ul a {
   text-decoration: none;
   font-family: inherit;
-  color: #060606;
-  font-size: 1rem;
-  font-weight: 500px;
+  color: #000000;
+  font-size: 0.9rem;
+  font-family: "Roboto", sans-serif;
 }
 footer .text-footer {
   margin-top: 100px;
   text-align: center;
   margin: auto;
-  color: red;
-  margin-top: 20px;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
 }/*# sourceMappingURL=style.css.map */
