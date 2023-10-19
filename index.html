@@ -5,33 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
 </head>
 <body>
     
-    <header>
-        <div class="container">
-            <nav class="primary-navigation">
-                    <a href=""><img class="logo"src="./images/White logo - no background.svg"  alt="logo"></a>
-                    <div class="dropdown">
-                        <button class="dropbtn">Menu
-                          <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                          <a href="#">Om oss</a>
-                          <a href="#">Tjänster</a>
-                          <a href="#">Refrenser</a>
-                          <a href="#">Kontakt</a>
-                        </div>
-                    </div>
-            </nav>
+    <header class="header">
+        <nav class="nav">
+            <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+            <label for="nav__checkbox" class="nav__toggle">
+                <img class="menu"src="images/navigation-aligned-dots-more-horizontal-three-dots-option-icon-svgrepo-com.svg" alt="" width="50px">
+                <img class="close" src="images/close-square-svgrepo-com.svg" alt="" width="50px">
+            </label>
+            <ul class="nav__menu">
+                <li><a href="#"><img src="images/White logo - no background.svg" alt="" width="100px"></a></li>
+                <li><a href="#">Om oss</a></li>
+                <li><a href="#">Tjänster</a></li>
+                <li><a href="#">Refrenser</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+
+                
+
+        </nav>
+            
             <h1> <span class="normal">WE <br>
                 DESIGN</span> <br>
                 <span class="bigger">EXPERIENCES</span>,<br>
                 <span class="smaller">NOT JUST</span> <br>
                 <span class="medium">WEBSITES</span></h1>
-        </div>
+
+       
       <button class="button-1" role="button">Button 1</button>
+
     </header>
 
     <section>
