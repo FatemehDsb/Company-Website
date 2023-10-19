@@ -91,25 +91,23 @@ header{
             .dropbtn {
                 font-size: 16px;
                 border: none;
-                outline: none;
                 color: white;
                 padding: 14px 16px;
                 background-color: inherit;
                 font-family: inherit; 
                 margin: 0;
                 position: relative;
+                display: inline-block;
               }
 
               .dropdown-content {
                 display: none;
                 position: absolute;
-                top:66px;
-                right: 10px;
+                width: 500px;
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                color: #000000;
-                width:300px;
+                color: #cb1111;
+                width:100vh;
                 z-index: 1;
-                
                 
           
                 a {
@@ -118,14 +116,15 @@ header{
                     text-decoration: none;
                     display: block;
                     text-align: left;
-                    color: #060606;
+                    color: #295dab;
                     background-color:#fff;
-                    
+                    width:500px;
+                    &:hover {
+                      background-color: #87d7c944;
+                    }
                   }
 
-                  a:hover {
-                    background-color: #87d7c944;
-                  }
+                  
           }
   }
 
