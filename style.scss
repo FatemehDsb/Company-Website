@@ -24,7 +24,6 @@ body{
   overflow: hidden;
 
 
-
 .header{
   overflow: hidden;
    background-image:url(./images/pexels-jakub-zerdzicki-18538670.jpg) ;
@@ -32,61 +31,85 @@ body{
    background-size:cover;
    background-position:30%;
    height:100vh;
+   width: 100%;
    
-   
-   .header-nav{
-    width: 100%;
-    background-color: rgba(211, 211, 211, 0.288);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 70px;
-    
-  .logo{
-    margin: auto;
-    
-    
-    img{
-      width:80px;
+   .content {
+    padding: 0 20px;
+    background-color: rgba(128, 128, 128, 0.34);
+
+    .logo {
+      color: #5FC0DC;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 36px;
+      font-weight: bold;
+    }
+    .toggler {
       
+     button{
+      background-color: transparent;
+      border: none;
+      
+     }
+      cursor: pointer;
+      position: absolute;
+      top: 8px;
+      right: 50px;
     }
   }
-    .nav-menu{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      text-align: center;
-      margin: auto;
-    
-      list-style: none;
-      gap: 5px;
-      
 
-      li{
-        
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-        padding: 10px;
-        border-radius: 10px;
-
-        &:hover{
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
-        }
-      
-        a{
-          color: #fff;
-
-          text-decoration: none;
-          &:hover{
-            
-            
-
-          }
-        }
-       
-
-      }
-    }
-   }
+   
+  
+  
+  /* START NAVIGATION */
+  nav {
+    width: 100%;
+    display: none;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #F2F2F2;
+    font-size: 18px;
+    line-height: 40px;
+    transition: 0.3s ease-out;
+  }
+  
+  nav ul li a:hover {
+    color: #3eb7d8;
+  }
+  
+  .active {
+    color: #5FC0DC;
+  }
+  
+  
+  
+ 
+  /* END NAVIGATION */
+  section {
+    margin-top: 500px;
+    text-align: center;
+    font-size: 10px;
+    color: #2F2F2F;
+    margin-bottom: 20px;
+  }
+  
+  section:after {
+    content: 'Jan/2018';
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  #info {
+    padding-top: 200px;
+    text-align: center;
+    color: #5FC0DC;
+  }
 
  
     
@@ -365,27 +388,35 @@ footer{
 
 
 //Media
-@media only screen and (min-width:560px) {
-  .nav{
-    &__toggle{
-      display:none;
-    }
-    &__menu{
-      flex-direction: row;
-    }
-    li{
-      display: block;
-      background-color: #590707;
-      &:nth-child(1){
-        display: block;
-      }
-      &:nth-child(2), &:nth-child(3){
-        display: block;
-      }
-    }
+
+@media screen and (min-width: 872px) {
+  
+  .content {
+    padding: 0 50px;
+  }
+  
+  .toggler {
+    display: none;
+  }
+  
+  nav {
+    display: inline-block !important; /* prevent the nav to hide when resize */
+    position: relative;
+    width: auto;
+    float: right;
+    padding: 5px 0;
+  }
+ 
+  nav ul {
+    float: left;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    padding-right: 20px;
+  }
+  
+  .side-nav {
+   float: right;
   }
 }
-
-
-
-
