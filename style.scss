@@ -12,81 +12,80 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
-    justify-content: center;
-    font-family: 'Barlow', sans-serif;
+    
+    
 }
+body{
+  font-family: 'Barlow', sans-serif;
+}
+.container{
+  width: 100%;
+  margin: 0px auto;
+  overflow: hidden;
 
 
 
 .header{
-   width: 100%;
-   margin: 0px auto;
-   overflow: hidden;
+  overflow: hidden;
    background-image:url(./images/pexels-jakub-zerdzicki-18538670.jpg) ;
    background-repeat: no-repeat;
    background-size:cover;
    background-position:30%;
-  height:100vh;
-
-  .nav{
-   border: 1px solid gray;
-   &__toggle{
-    position: absolute;
-    cursor: pointer;
-    margin:0rem 1rem ;
-    right: 0;
-    img{
-      width: 1.5rem;
-    }
-    .close{
-      display: none;
-    }
-    .menu{
-      margin-top: 0.2rem;
-    }
-    
-   }
-   &__checkbox{
-    display: none;
-  }
-  &__menu{
+   height:100vh;
+   
+   
+   .header-nav{
+    background-color: rgba(211, 211, 211, 0.288);
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    margin: 1rem;
-
-    li{
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    
+  .logo{
+    margin: auto;
+    
+    
+    img{
+      width:90px;
+    }
+  }
+    .nav-menu{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: center;
+      margin: auto;
+    
       list-style: none;
-      display: none;
+      gap: 15px;
+      
 
-      &:first-child{
-        margin-right: auto;
-        display: block;
+      li{
+        width: 80px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+        padding: 10px;
+        border-radius: 10px;
+
+        &:hover{
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+        }
+      
+        a{
+          color: #fff;
+
+          text-decoration: none;
+          &:hover{
+            
+            
+
+          }
+        }
+       
+
       }
     }
-    a{
-      text-decoration: none;
-      color: inherit;
-      font-size: 1.2rem;
-    }
-    img{
-      width: 5rem;
-      
-    }
-  }
-  }
+   }
 
-  #nav__checkbox:checked ~ ul.nav__menu li{
-
-    display: block;
-  }
-  #nav__checkbox:checked ~ label.nav__toggle .close{
-    display: block;
-  }
-  #nav__checkbox:checked ~ label.nav__toggle  .menu{
-    display: none;
-  }
  
     
   
@@ -125,7 +124,8 @@
 
 /* CSS */
 .button-1 {
-  background-color: #8d4dc463;
+  
+  background-color: #8d4dc4ad;
   border-radius: 8px;
   border-style: none;
   color: #FFFFFF;
@@ -147,7 +147,8 @@
 
 }
 .button-1:hover{
-  background-color: rgb(162, 0, 255);
+  background-color: rgba(162, 0, 255, 0.484);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
 }
 
 
@@ -358,33 +359,27 @@ footer{
   
 }
 }
+}
 
 
-@media only screen and (min-width:560px){
+//Media
+@media only screen and (min-width:560px) {
   .nav{
-   background-color: red;
     &__toggle{
-      display: none;
+      display:none;
     }
     &__menu{
-      flex-direction: column;
-      
-
-      .nav__menu{
-        background-color: blue;
+      flex-direction: row;
+    }
+    li{
+      display: block;
+      background-color: #590707;
+      &:nth-child(1){
         display: block;
-
-        li a{
-          display: block;
-          
-          
-  
-  
-          
-        }
       }
-
-      
+      &:nth-child(2), &:nth-child(3){
+        display: block;
+      }
     }
   }
 }
