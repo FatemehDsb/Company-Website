@@ -175,28 +175,25 @@ body {
   font-family: "Barlow", sans-serif;
   font-size: 1rem;
 }
-.container .container-main .service-wrapper .service-long-text {
-  background-color: lightgray;
+.container .container-main .service-wrapper .service-long-text .service-text {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 200px;
 }
 .container .container-main .service-wrapper .service-items {
   background-color: #fff;
   width: 90%;
-  height: 50vh;
+  height: 60vh;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
 }
 .container .container-main .service-wrapper .service-items:hover {
-  background-color: rgba(245, 219, 115, 0.395);
-}
-.container .container-main .service-wrapper .service-items .service-text {
-  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 .container .container-main .service-wrapper .service-items img {
-  width: 40%;
+  width: 20%;
   margin: auto;
-  margin-top: 20px;
-  margin-bottom: 2px;
 }
 .container footer {
   background-color: darkgray;
