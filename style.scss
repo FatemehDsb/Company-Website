@@ -1,8 +1,8 @@
 //variables
 
 $color-1:rgba(176, 136, 202, 0.578) ;
-$color-2:rgba(151, 251, 234, 0.562);
-$color-3:rgba(254, 203, 1, 0.6);
+$color-2:rgba(151, 251, 234, 0.279);
+$color-3:rgba(254, 203, 1, 0.258);
 
 $box-shadow-1:0px 8px 16px 0px rgba(0,0,0,0.2);
 
@@ -177,12 +177,13 @@ body{
     gap:10px;
     
     
+    
     .om-oss-title{
       text-align: center;
       font-family:  sans-serif; 
         p{
     color: $font-color-1;
-    font-size: 1.6rem;
+    font-size: 2rem;
     text-align: center;
     padding: 6px;
          }
@@ -217,18 +218,24 @@ body{
     display: flex;
     flex-direction: column;
     padding: 20px;
+    background-color: $color-1;
     
 
     .service {
-      border: 2px solid $color-2;
+      border: 1px solid $font-color-2;
+
       border-radius: 20px;
       padding: 20px;
-      margin: 10px 0;
-      @include button-Style();
+      margin: 10px auto;
+      
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      max-width: 300px;
+      min-width:200px;
+
+      @include button-Style();
 
       img{
         max-width: 50px;
@@ -357,23 +364,25 @@ footer{
   }
   
   .service-section {
-    width: 60%;
-    background-color: lightgray;
+    width: 100%;
+   
     
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    gap:10px;
+ gap:10px;
     
    
 
     .service{
-      max-width: 200px;
-      min-width:100px;
+      max-width: 300px;
+      min-width:300px;
+      
 
       p{
         font-size: 0.8rem;
+        
       }
 
     }
@@ -417,7 +426,7 @@ footer{
       height:70%;
       max-width: 500px;
       padding: 0px;
-     border: 1px solid blue;
+     
       margin: auto;
       padding: 0px;
       border-radius: 0px;
@@ -433,7 +442,7 @@ footer{
       }
       width: 50%;
       max-width: 400px;
-      border: 1px solid rgb(0, 204, 255);
+      
     }    
    
   }
