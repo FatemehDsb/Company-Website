@@ -12,11 +12,7 @@ body {
   font-family: "Barlow", sans-serif;
 }
 
-.container {
-  width: 100%;
-  margin: 0px auto;
-}
-.container .header {
+.header {
   overflow: hidden;
   background-image: url(./images/pexels-jakub-zerdzicki-18538670.jpg);
   background-repeat: no-repeat;
@@ -27,42 +23,42 @@ body {
   /* START NAVIGATION */
   /* END NAVIGATION */
 }
-.container .header .content {
+.header .content {
   padding: 10px 20px;
   background-color: rgba(176, 136, 202, 0.578);
   display: flex;
   justify-content: space-between;
 }
-.container .header .content .logo:hover {
+.header .content .logo:hover {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
-.container .header .content .toggler {
+.header .content .toggler {
   cursor: pointer;
   position: absolute;
   top: 8px;
   right: 50px;
 }
-.container .header .content .toggler button {
+.header .content .toggler button {
   background-color: transparent;
   border: none;
 }
-.container .header .content .toggler button:hover {
+.header .content .toggler button:hover {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
-.container .header nav {
+.header nav {
   width: 100%;
   display: none;
 }
-.container .header nav ul {
+.header nav ul {
   list-style: none;
 }
-.container .header nav li .active {
+.header nav li .active {
   color: rgba(254, 203, 1, 0.6);
   text-align: center;
 }
-.container .header nav li a {
+.header nav li a {
   margin-left: 70px;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.838);
@@ -70,35 +66,35 @@ body {
   line-height: 40px;
   transition: 0.3s ease-out;
 }
-.container .header nav li:hover :hover {
+.header nav li:hover :hover {
   color: rgba(151, 251, 234, 0.562);
 }
-.container .header h1 {
+.header h1 {
   color: rgb(255, 255, 255);
   position: absolute;
   margin-top: 60px;
   margin-left: 23px;
   font-size: 2rem;
 }
-.container .header h1 .normal {
+.header h1 .normal {
   font-size: 2rem;
   font-weight: 200;
   font-style: oblique;
 }
-.container .header h1 .bigger {
+.header h1 .bigger {
   font-size: 3rem;
   font-weight: 400;
 }
-.container .header h1 .smaller {
+.header h1 .smaller {
   font-size: 1.2rem;
   font-weight: 200;
   font-style: italic;
 }
-.container .header h1 .medium {
+.header h1 .medium {
   font-size: 2.4rem;
   font-weight: 300;
 }
-.container .header .button-1 {
+.header .button-1 {
   background-color: rgba(176, 136, 202, 0.578);
   border-radius: 8px;
   border-style: none;
@@ -118,14 +114,16 @@ body {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border: 1px solid rgb(255, 255, 255);
 }
-.container .header .button-1:hover:hover {
+.header .button-1:hover:hover {
   background-color: rgba(254, 203, 1, 0.6);
 }
-.container .container-main {
+
+.om-oss {
   text-align: center;
   align-items: center;
+  display: flex;
 }
-.container .container-main .om-oss-wrapper {
+.om-oss .om-oss-wrapper {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -133,56 +131,60 @@ body {
   justify-content: center;
   gap: 10px;
 }
-.container .container-main .om-oss-wrapper .om-oss-title {
+.om-oss .om-oss-wrapper .om-oss-title {
   text-align: center;
   font-family: sans-serif;
 }
-.container .container-main .om-oss-wrapper .om-oss-title p {
+.om-oss .om-oss-wrapper .om-oss-title p {
   color: rgba(0, 0, 0, 0.838);
   font-size: 1.6rem;
   text-align: center;
   padding: 6px;
 }
-.container .container-main .om-oss-wrapper .om-oss-img img {
+.om-oss .om-oss-wrapper .om-oss-img img {
   width: 60%;
   border-radius: 100px;
 }
-.container .container-main .om-oss-wrapper .om-oss-text {
+.om-oss .om-oss-wrapper .om-oss-text {
   width: 70%;
   margin: 0 auto;
 }
-.container .container-main .om-oss-wrapper .om-oss-text p {
+.om-oss .om-oss-wrapper .om-oss-text p {
   font-size: 0.9rem;
   text-align: left;
 }
-.container .container-main .service-section {
+
+.service-section {
+  background-color: red;
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background-color: rgba(151, 251, 234, 0.562);
 }
-.container .container-main .service-section .service {
-  border: 1px solid #ddd;
-  background-color: rgb(255, 255, 255);
+.service-section .service {
+  border: 2px solid rgba(151, 251, 234, 0.562);
   border-radius: 20px;
-  padding: 10px;
+  padding: 20px;
   margin: 10px 0;
 }
-.container .container-main .service-section .service:hover {
+.service-section .service:hover {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
-.container .container-main .service-section .service h2 {
+.service-section .service img {
+  max-width: 50px;
+}
+.service-section .service h2 {
   margin-bottom: 5px;
 }
-.container .container-main .service-section .service p {
+.service-section .service p {
   text-align: left;
 }
-.container .container-main footer {
+
+footer {
   background-color: darkgray;
   height: 200px;
 }
-.container .container-main footer .footer-wrapper {
+footer .footer-wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -191,67 +193,116 @@ body {
   padding: 10px;
   padding-left: 40px;
 }
-.container .container-main footer .footer-wrapper .logo-footer img {
+footer .footer-wrapper .logo-footer img {
   max-width: 100px;
 }
-.container .container-main footer .footer-wrapper .undersidan-footer {
+footer .footer-wrapper .undersidan-footer {
   margin-top: 5px;
 }
-.container .container-main footer .footer-wrapper .undersidan-footer ul {
+footer .footer-wrapper .undersidan-footer ul {
   list-style: none;
 }
-.container .container-main footer .footer-wrapper .undersidan-footer ul li {
+footer .footer-wrapper .undersidan-footer ul li {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   gap: 6px;
 }
-.container .container-main footer .footer-wrapper .undersidan-footer ul a {
+footer .footer-wrapper .undersidan-footer ul a {
   text-decoration: none;
   font-family: inherit;
   color: #000000;
   font-size: 0.9rem;
   font-family: "Roboto", sans-serif;
 }
-.container .container-main footer .text-footer {
+footer .text-footer {
   margin-top: 100px;
   text-align: center;
   margin: auto;
   margin-top: 10px;
   font-family: "Roboto", sans-serif;
 }
+
 @media screen and (min-width: 556px) {
-  .container .content .toggler {
+  .content .toggler {
     display: none;
   }
-  .container .content nav {
+  .content nav {
     display: inline-block !important; /* prevent the nav to hide when resize */
     position: relative;
     max-width: 70%;
     margin-left: 30px;
   }
-  .container .content nav ul {
+  .content nav ul {
     display: flex;
     justify-content: space-around;
   }
-  .container .content nav ul li {
+  .content nav ul li {
     display: inline-block;
+    border: 1px solid rgb(255, 255, 255);
     text-align: center;
     padding: auto;
     width: 150px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
   }
-  .container .content nav ul li a {
+  .content nav ul li:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  .content nav ul li a {
     text-align: center;
     padding: auto;
     margin: auto;
   }
-  .container .service-section {
+  .service-section {
     flex-direction: row;
+    justify-content: space-around;
+    background-color: red;
   }
-  .container .service {
-    flex: 1;
-    margin: 0 10px;
+  .service-section img {
+    max-width: 100%;
+  }
+  .om-oss {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    border: 1px solid blue;
+    height: 100vh;
+    align-content: center;
+    align-items: center;
+  }
+  .om-oss .om-oss-wrapper {
+    margin: auto;
+    padding: auto;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 100px;
+  }
+  .om-oss .om-oss-wrapper .om-oss-title {
+    width: 13%;
+    max-width: 200x;
+    border: 1px solid red;
+    position: absolute;
+    top: 60px;
+  }
+  .om-oss .om-oss-wrapper .om-oss-img {
+    width: 60%;
+    max-width: 500px;
+    padding: 0px;
+    border: 1px solid red;
+    margin: auto;
+    padding: auto;
+  }
+  .om-oss .om-oss-wrapper .om-oss-text {
+    margin: auto;
+    padding: auto;
+    width: 50%;
+    max-width: 400px;
+    border: 1px solid rgb(0, 204, 255);
+  }
+  .om-oss .om-oss-wrapper .om-oss-text p {
+    font-size: 1.3rem;
+    padding: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
