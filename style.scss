@@ -7,6 +7,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -35,8 +38,7 @@ body{
     background-color: rgba(255, 255, 255, 0.34);
     display: flex;
     justify-content:space-between;
-    .logo {
-     
+    .logo {   
      margin-top: 10px;
 
      &:hover{
@@ -53,6 +55,7 @@ body{
      button{
       background-color: transparent;
       border: none;
+      
 
       &:hover{
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -73,7 +76,7 @@ body{
     }
     li {
       .active {
-        color: #5FC0DC;
+        color: #353636;
         text-align: center;
       }
     
@@ -146,7 +149,7 @@ body{
   line-height: 20px;
   outline: none;
   padding: 10px 16px;
-  margin-top: 350px;
+  margin-top: 300px;
   margin-left: 25px;
   text-align: center;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -156,8 +159,6 @@ body{
   background-color: rgba(162, 0, 255, 0.484);
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
 }
-
-  
 }
 
 .container-main{
@@ -179,14 +180,16 @@ body{
 
     .om-oss-title{
       text-align: center;
+      font-family: 'Roboto Slab', serif;
       
    
    p{
+    
     color: rgb(23, 19, 19);
-    font-family: 'Barlow', sans-serif;
     font-size: 1.4rem;
     text-align: center;
     padding: 6px;
+    
    }
     }
 
@@ -201,7 +204,9 @@ body{
      width: 70%;
      margin: 0 auto;
       p{
-        font-size: 1.2rem;
+        font-size: 0.9rem;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 300;
       }
     }
   }
@@ -218,34 +223,40 @@ body{
 
         .service-title{
           p{
+            border: 1px solid black;
             color: rgb(23, 19, 19);
-            font-family: 'Barlow', sans-serif;
-            font-size: 1rem;
+            font-family:  sans-serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 30px;
            }
         }
         .service-item-wrapper{
+          border: 1px solid black;
           display: flex;
           flex-direction: column;
           justify-content: space-around;
           align-items: center;
-          
-          height: 300px;
+          height: 400px;
           width: 100%;
           
 
           .service-item{
+            border: 1px solid rgb(193, 9, 9);
             background-color: #fff;
-              height: 70%;
-              width: 60%;
+              height: 80%;
+              width: 90%;
               border-radius: 20px;
               display: flex;
               align-items: center;
               justify-content: center;
               gap:10px;
+              margin: auto;
               
               img{
 
-                width: 15%;
+                width: 25%;
                 
               }
               
@@ -256,14 +267,19 @@ body{
           }
          }
        .service-text{
-        width: 60%;
+        width: 90%;
+        font-family:  sans-serif;
+        margin-top: 20px;
+        text-align: left;
         
        
 
         .service-text-title{
           text-align: center;
-          font-size: 1.2rem;
-          font-weight: 200px;
+          font-size: 1.4rem;
+          font-weight: 400px;
+          font-family:  sans-serif;
+          margin-bottom: 10px;
     
           
         }
