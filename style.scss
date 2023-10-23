@@ -1,14 +1,38 @@
 //variables
 
+$color-1:rgba(176, 136, 202, 0.578) ;
+$color-2:rgba(151, 251, 234, 0.562);
+$color-3:rgba(254, 203, 1, 0.6);
+
+$box-shadow-1:0px 8px 16px 0px rgba(0,0,0,0.2);
+
+$font-color-1:rgba(0, 0, 0, 0.838);
+$font-color-2:rgb(255, 255, 255);
+$font-color-hover: rgba(0,0,0,0);
+
+@mixin button-Style{
+  &:hover{
+    box-shadow: $box-shadow-1;
+    border-radius: 10px;
+   }
+}
+
+@mixin button-Style-2{
+  &:hover{
+    
+    background-color: $color-3;
+   }
+}
 
 
-
+//fonts
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
 
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&display=swap');
+
+
 
 *{
     margin: 0;
@@ -22,8 +46,6 @@ body{
 .container{
   width: 100%;
   margin: 0px auto;
-  
-
 .header{
   overflow: hidden;
    background-image:url(./images/pexels-jakub-zerdzicki-18538670.jpg) ;
@@ -35,16 +57,11 @@ body{
    
    .content {
     padding: 10px 20px;
-    background-color: rgba(255, 255, 255, 0.34);
+    background-color:$color-1;
     display: flex;
     justify-content:space-between;
     .logo {   
-     margin-top: 10px;
-
-     &:hover{
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      border-radius: 10px;
-     }
+     @include button-Style();
     }
     .toggler {
       cursor: pointer;
@@ -56,11 +73,7 @@ body{
       background-color: transparent;
       border: none;
       
-
-      &:hover{
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        border-radius: 10px;
-       }
+@include button-Style()
      }
     }
   }
@@ -76,45 +89,39 @@ body{
     }
     li {
       .active {
-        color: #353636;
+        color: $color-3;
         text-align: center;
       }
     
     a {
       margin-left: 70px;
       text-decoration: none;
-      color: #000000;
+      color:$font-color-1;
       font-size: 18px;
       line-height: 40px;
       transition: 0.3s ease-out;
-      
     }
 
     &:hover{
       :hover {
-        color: #3eb7d8;
+        color:$color-2;
       }
     }
   }
   }
-  /* END NAVIGATION */
-  
-  
- 
+  /* END NAVIGATION */ 
     h1{
-      color: #fff;
+      color: $font-color-2;
       position: absolute;
       margin-top:60px;
       margin-left: 23px;
       font-size:2rem;
         
-
         .normal{
             font-size: 2rem;
             font-weight: 200;
             font-style: oblique;
         }
-        
         .bigger{
             font-size: 3rem;
             font-weight: 400;     
@@ -126,20 +133,16 @@ body{
         }
         .medium{
           font-size:2.4rem;
-            font-weight: 300;
+          font-weight: 300;
         }
-        
     }
 
-    
-
-/* CSS */
 .button-1 {
   
-  background-color: #8d4dc4ad;
+  background-color: $color-1;
   border-radius: 8px;
   border-style: none;
-  color: #FFFFFF;
+  color: $font-color-2;
   cursor: pointer;
   font-family: inherit;
   font-size: 14px;
@@ -152,21 +155,17 @@ body{
   margin-top: 300px;
   margin-left: 25px;
   text-align: center;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  border: 1px solid #fff;
+  box-shadow: $box-shadow-1;
+  border: 1px solid $font-color-2;
 }
 .button-1:hover{
-  background-color: rgba(162, 0, 255, 0.484);
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+  @include button-Style-2()
 }
 }
 
 .container-main{
-  
- 
   text-align: center; 
   align-items: center;
- 
 
   .om-oss-wrapper{
     height: 100vh;
@@ -176,28 +175,23 @@ body{
     justify-content: center;
     gap:10px;
     
-   
-
     .om-oss-title{
       text-align: center;
-      font-family: 'Roboto Slab', serif;
+      font-family:  sans-serif;
       
-   
    p{
     
-    color: rgb(23, 19, 19);
-    font-size: 1.4rem;
+    color: $font-color-1;
+    font-size: 1.6rem;
     text-align: center;
     padding: 6px;
-    
    }
     }
-
     .om-oss-img{
       img{
-        width:80%;
+        width:60%;
         border-radius: 100px;
-      
+        
       }
     }
     .om-oss-text{
@@ -205,98 +199,45 @@ body{
      margin: 0 auto;
       p{
         font-size: 0.9rem;
-        font-family: 'Roboto Slab', serif;
-        font-weight: 300;
+        text-align: left;
       }
     }
   }
 
-    .service-wrapper{  
-      background-color: rgba(173, 229, 230, 0.258);    
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-content: center;
-        align-items: center;
-        gap: 5px;
-
-        .service-title{
-          p{
-            border: 1px solid black;
-            color: rgb(23, 19, 19);
-            font-family:  sans-serif;
-            font-size: 1.6rem;
-            font-weight: 600;
-            margin-top: 40px;
-            margin-bottom: 30px;
-           }
-        }
-        .service-item-wrapper{
-          border: 1px solid black;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          align-items: center;
-          height: 400px;
-          width: 100%;
-          
-
-          .service-item{
-            border: 1px solid rgb(193, 9, 9);
-            background-color: #fff;
-              height: 80%;
-              width: 90%;
-              border-radius: 20px;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              gap:10px;
-              margin: auto;
-              
-              img{
-
-                width: 25%;
-                
-              }
-              
-              &:hover {
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            }
-             
-          }
-         }
-       .service-text{
-        width: 90%;
-        font-family:  sans-serif;
-        margin-top: 20px;
-        text-align: left;
-        
-       
-
-        .service-text-title{
-          text-align: center;
-          font-size: 1.4rem;
-          font-weight: 400px;
-          font-family:  sans-serif;
-          margin-bottom: 10px;
+  .service-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: $color-2;
     
-          
-        }
-       }
-     
-        }
-        }
+
+    .service {
+      border: 1px solid #ddd;
+      background-color: $font-color-2;
+      border-radius: 20px;
+      padding: 10px;
+      margin: 10px 0;
+      @include button-Style();
+    
+      h2{
+        margin-bottom: 5px;
+        
+      }
+      p{
+        text-align: left;
+      }
+    }
+  }
+  
+  
 
 footer{
   background-color: darkgray;
-  margin-top: 20px;
-  height:300px;
+  
+  height:200px;
 
 
 .footer-wrapper{
-  
-    
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -401,11 +342,17 @@ footer{
       }
     }
   }
-  
-  
-  
-  
-
-  
-  
+  .service-section {
+    flex-direction: row;
+    
 }
+
+.service {
+    flex: 1;
+    margin: 0 10px;
+}
+}  
+}
+
+
+
