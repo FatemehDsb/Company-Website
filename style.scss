@@ -212,7 +212,8 @@ body{
 
 
   .service-section {
-    background-color: red;
+    width: 100%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -224,6 +225,10 @@ body{
       padding: 20px;
       margin: 10px 0;
       @include button-Style();
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
       img{
         max-width: 50px;
@@ -352,9 +357,27 @@ footer{
   }
   
   .service-section {
+    width: 60%;
+    background-color: lightgray;
+    
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    background-color: red;
+    gap:10px;
+    
+   
+
+    .service{
+      max-width: 200px;
+      min-width:100px;
+
+      p{
+        font-size: 0.8rem;
+      }
+
+    }
+    
       img{
         max-width: 100%;
       }
@@ -366,7 +389,7 @@ footer{
   flex-direction: row;
   justify-content: space-around;
   width: 100vw;
-  border: 1px solid blue;
+  padding: 50px;
   height: 100vh;
   align-content: center;
   align-items: center;
@@ -378,26 +401,32 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     padding-top:100px;
+    min-width: 600px;
+    flex-wrap: wrap;
 
     .om-oss-title{
      width: 13%;
      max-width: 200x;
-     border: 1px solid red;
+     
      position: absolute;
      top:60px;
     }
 
     .om-oss-img{
-      width:60%;
+      width:40%;
+      height:70%;
       max-width: 500px;
       padding: 0px;
-      border: 1px solid red;
+     border: 1px solid blue;
       margin: auto;
-      padding: auto;
+      padding: 0px;
+      border-radius: 0px;
     }
     .om-oss-text{
       margin: auto;
       padding: auto;
+      height:70%;
+      width: 60%;
       p{
         font-size:1.3rem;
         padding: 30px;
