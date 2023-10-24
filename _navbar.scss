@@ -1,0 +1,57 @@
+header{
+
+.content-nav {
+    padding: 10px 20px;
+    background-color:$color-1;
+    display: flex;
+    justify-content:space-between;
+    .logo {   
+     @include button-Style();
+    }
+    .toggler {
+      cursor: pointer;
+      position: absolute;
+      top: 8px;
+      right: 50px;
+      
+     button{
+      background-color: transparent;
+      border: none;
+      
+  @include button-Style()
+     }
+    }
+  }
+  
+  nav {
+    
+    width: 100%;
+    display: none;
+  
+    ul {
+      list-style: none;
+   
+    li {
+      .active {
+        color: $font-color-2;
+        text-align: center;
+      }
+    
+    a {
+      margin-left: 70px;
+      text-decoration: none;
+      color:$font-color-1;
+      font-size: 18px;
+      line-height: 40px;
+      transition: 0.3s ease-out;
+    }
+  }
+  
+    &:hover{
+      :hover {
+        color:$color-2;
+      }
+    }
+  }
+  }
+}

@@ -1,0 +1,25 @@
+$color-1:rgba(176, 136, 202, 0.555);
+$color-2:rgba(151, 251, 234, 0.279);
+$color-3:rgba(254, 203, 1, 0.258);
+
+$box-shadow-1:0px 8px 16px 0px rgba(0,0,0,0.2);
+
+$font-color-1:rgba(0, 0, 0, 0.838);
+$font-color-2:rgb(255, 255, 255);
+$font-color-hover: rgba(0,0,0,0);
+
+
+
+@mixin button-Style{
+    &:hover{
+      box-shadow: $box-shadow-1;
+      border-radius: 10px;
+     }
+  }
+  
+  @mixin button-Style-2{
+    &:hover{
+      
+      background-color: $color-3;
+     }
+  }

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,12 +8,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="../style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+</head>
     
 <body>
     
-      <header class="header">
-        <div class="content">
+      <header class="header-nav">
+        <div class="content-nav">
             <a class="logo" href="#">
                 <img src="../images/White logo - no background.svg" alt="" width="100px">
             </a>
@@ -20,27 +22,65 @@
             </div>
             
             <!-- Start Navigation -->
-            <nav>
-              <ul>
-                    <li>
-                         <a href="#" class="active">Om oss</a>
-                    </li>
-                    <li>
-                          <a href="#">Tjänster</a>
-                    </li>
-                    <li>
-                          <a href="#">Refrenser</a>
-                    </li>
-                    <li>
-                          <a href="index/Kontakt.html">Kontakt</a>
-                   </li>
-                </ul>
-                   
-            </nav>
             
-      </div> 
+            <nav>
+                <ul>
+                   <li>
+                      <a href="#" >Om oss</a>
+                   </li>
+                    <li>
+                            <a href="#">Refrenser</a>
+                    </li>
+                     <li>
+                            <a href="#">Tjänster</a>
+                        </li>
+                        <li>
+                            <a href="index/Kontakt.html" class="active">Kontakt</a>
+                        </li>
+                </ul>           
+            </nav>
+        </div> 
+      </header>
 
-
-
-         <!---->
+      <div class="container-form">
         
+      <div class="contact-image">
+        <img src="../images/contact-women-talking-svgrepo-com.svg" alt="" width="100px">
+      </div>
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+
+      
+      
+
+
+
+      
+
+      <script>
+        $(function() {
+            $('.toggler').on('click', function() {
+                $('nav').slideToggle(500);
+          });
+        });</script>
+    
+</body>
+</html>
