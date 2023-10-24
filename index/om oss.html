@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <header class="header-nav">
+        <div class="content-nav">
+            <a class="logo" href="../index.html">
+                <img src="../images/White logo - no background.svg" alt="" width="100px">
+            </a>
+            <div class="toggler">
+                <button><img src="../images/menu-hamburger-svgrepo-com.svg" alt="" width="30px"></button>
+            </div>
+            
+            <!-- Start Navigation -->
+            
+            <nav>
+                <ul>
+                   <li>
+                      <a href="./om oss.html" class="active" >Om oss</a>
+                   </li>
+                    <li>
+                            <a href="./refrenser.html">Refrenser</a>
+                    </li>
+                     <li>
+                            <a href="#">Tjänster</a>
+                        </li>
+                        <li>
+                            <a href="./kontakt.html" >Kontakt</a>
+                        </li>
+                </ul>           
+            </nav>
+        </div> 
+      </header>
+
+      <main class="main-content">
+        <section class="about-history">
+            <h1>Historik om företaget</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+
+        <section class="company-motto">
+            <h1>Företagsmotto</h1>
+            <p>"Creating a Brighter Future Together"</p>
+        </section>
+
+        <section class="employees">
+            <h1>Anställda på företaget</h1>
+            <div class="employee">
+                <img src="employee1.jpg" alt="Employee 1">
+                <h2>Anna Andersson</h2>
+                <p>Rol: Marknadsföringschef</p>
+                <p>Email: anna@example.com</p>
+                <p>Anna är en entusiastisk marknadsförare med flera års erfarenhet i branschen.</p>
+            </div>
+            
+            <!-- Add more employees in a similar format -->
+        </section>
+    </main>
+
+
+      
+    
+
+
+      <script>
+        $(function() {
+            $('.toggler').on('click', function() {
+                $('nav').slideToggle(500);
+          });
+        });</script>
+    
+</body>
+</html>
