@@ -180,6 +180,7 @@ nav {
     .om-oss-img{
       img{
         width:60%;
+        max-width: 400px;
         border-radius: 100px;
       }
     }
@@ -320,7 +321,7 @@ footer{
 
 //Media
 
-@media screen and (min-width: 556px) {
+@media screen and (min-width: 768px) {
   
   .content-nav {
     .toggler {
@@ -383,51 +384,41 @@ footer{
  
 .om-oss{
  
-background-color: red;
   flex-direction: row;
   justify-content: space-around;
-  padding: 10px;
   align-content: center;
   align-items: center;
+ 
 
   .om-oss-wrapper{
-    border: 1px solid black;
-    margin: auto;
-    padding: auto;
+    
+    margin: 0 auto;
+    padding: 60px;
     position: relative;
     flex-direction: row;
     justify-content: space-around;
-    padding-top:100px;
    
-
     .om-oss-title{
-     
-     
-     border: 1px solid black;
      position: absolute;
-     top:60px;
-     
+     top:60px;  
     }
 
     .om-oss-img{
-      width:40%;
-      border: 1px solid black;
-      
-      padding: 0px;
+      min-width: 600px;
+      padding: 0px auto;
       margin: auto;
-      padding: 0px;
-      border-radius: 0px;
     }
     .om-oss-text{
-      border: 1px solid rgb(7, 5, 5);
-       width: 40%;
-      p{
-        font-size:1.1rem;
-        padding: 30px;
-      }
-      width: 50%;
-      max-width: 400px;
       
+      min-width: 500px;
+      text-align: center;
+      padding: 20px;
+      max-width: 400px;
+      margin-top: 130px;
+      p{
+        font-size:1.2rem;
+        padding: 10px;
+      }
     }    
    
   }

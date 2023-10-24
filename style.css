@@ -126,7 +126,7 @@ header nav ul:hover :hover {
   background-color: #0056b3;
 }
 
-@media screen and (min-width: 566px) {
+@media screen and (min-width: 768px) {
   .container-form {
     flex-direction: row;
   }
@@ -236,53 +236,86 @@ a {
   color: yellow;
 }
 
-.main-content {
-  padding: 20px;
+.team {
+  width: 100%;
+  height: 100vh;
 }
 
-.about-history, .company-motto, .employees {
-  margin-bottom: 20px;
+.team-content {
+  border: 1px solid black;
+  width: 100%;
+  margin: auto;
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  margin-top: 4rem;
 }
 
-h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.team-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 15px;
 }
 
-.employee {
-  margin-bottom: 20px;
+.center h1 {
+  color: #0a0a0a;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
-img {
-  max-width: 100%;
-  border-radius: 50%;
+.box {
+  width: 80%;
+  max-width: 200px;
+  height: 200px;
+  padding: 16px;
+  background-color: red;
+  border-radius: 15px;
+  transition: all 0.38s ease;
 }
 
-/* Add media queries for responsiveness */
-@media screen and (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-  .nav ul {
-    display: none;
-    flex-direction: column;
-    background-color: #333;
-    position: absolute;
-    top: 45px;
-    left: 0;
+.box h3 {
+  font-size: 23px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.box h5 {
+  font-size: 15px;
+  font-weight: 200;
+  color: #6d6c6f;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .team {
+    border: 1px solid blue;
     width: 100%;
-    text-align: center;
+    height: auto;
   }
-  .nav ul.active {
-    display: flex;
+  .team .team-content {
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
   }
-  .nav ul li {
-    margin: 10px 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  body {
+  .team .team-content .box {
     background-color: red;
+    min-width: 100px;
+  }
+  .center h1 {
+    font-size: 3.2rem;
   }
 }
 * {
@@ -427,6 +460,7 @@ body {
 }
 .om-oss .om-oss-wrapper .om-oss-img img {
   width: 60%;
+  max-width: 400px;
   border-radius: 100px;
 }
 .om-oss .om-oss-wrapper .om-oss-text {
@@ -515,7 +549,7 @@ footer .text-footer {
   font-family: "Roboto", sans-serif;
 }
 
-@media screen and (min-width: 556px) {
+@media screen and (min-width: 768px) {
   .content-nav .toggler {
     display: none;
   }
@@ -565,43 +599,36 @@ footer .text-footer {
     max-width: 100%;
   }
   .om-oss {
-    background-color: red;
     flex-direction: row;
     justify-content: space-around;
-    padding: 10px;
     align-content: center;
     align-items: center;
   }
   .om-oss .om-oss-wrapper {
-    border: 1px solid black;
-    margin: auto;
-    padding: auto;
+    margin: 0 auto;
+    padding: 60px;
     position: relative;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 100px;
   }
   .om-oss .om-oss-wrapper .om-oss-title {
-    border: 1px solid black;
     position: absolute;
     top: 60px;
   }
   .om-oss .om-oss-wrapper .om-oss-img {
-    width: 40%;
-    border: 1px solid black;
-    padding: 0px;
+    min-width: 600px;
+    padding: 0px auto;
     margin: auto;
-    padding: 0px;
-    border-radius: 0px;
   }
   .om-oss .om-oss-wrapper .om-oss-text {
-    border: 1px solid rgb(7, 5, 5);
-    width: 40%;
-    width: 50%;
+    min-width: 500px;
+    text-align: center;
+    padding: 20px;
     max-width: 400px;
+    margin-top: 130px;
   }
   .om-oss .om-oss-wrapper .om-oss-text p {
-    font-size: 1.1rem;
-    padding: 30px;
+    font-size: 1.2rem;
+    padding: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
