@@ -1,9 +1,7 @@
 
 
 
-//variables
-
-$color-1:rgba(176, 136, 202, 0.578) ;
+$color-1:#fff;
 $color-2:rgba(151, 251, 234, 0.279);
 $color-3:rgba(254, 203, 1, 0.258);
 
@@ -55,62 +53,63 @@ body{
    background-position:30%;
    height:100vh;
    width: 100%;
+
    
-   .content {
-    padding: 10px 20px;
-    background-color:$color-1;
-    display: flex;
-    justify-content:space-between;
-    .logo {   
-     @include button-Style();
-    }
-    .toggler {
-      cursor: pointer;
-      position: absolute;
-      top: 8px;
-      right: 50px;
-      
-     button{
-      background-color: transparent;
-      border: none;
-      
-@include button-Style()
-     }
-    }
+.content-nav {
+  padding: 10px 20px;
+  background-color:lightblue;
+  display: flex;
+  justify-content:space-between;
+  .logo {   
+   @include button-Style();
   }
-
-   
-  /* START NAVIGATION */
-  nav {
-    width: 100%;
-    display: none;
-
-    ul {
-      list-style: none;
-    }
-    li {
-      .active {
-        color: $color-3;
-        text-align: center;
-      }
+  .toggler {
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 50px;
     
-    a {
-      margin-left: 70px;
-      text-decoration: none;
-      color:$font-color-1;
-      font-size: 18px;
-      line-height: 40px;
-      transition: 0.3s ease-out;
-    }
+   button{
+    background-color: transparent;
+    border: none;
+    
+@include button-Style()
+   }
+  }
+}
 
-    &:hover{
-      :hover {
-        color:$color-2;
-      }
+nav {
+  
+  width: 100%;
+  display: none;
+
+  ul {
+    list-style: none;
+ 
+  li {
+    .active {
+      color: $color-3;
+      text-align: center;
+    }
+  
+  a {
+    margin-left: 70px;
+    text-decoration: none;
+    color:$font-color-1;
+    font-size: 18px;
+    line-height: 40px;
+    transition: 0.3s ease-out;
+  }
+}
+
+  &:hover{
+    :hover {
+      color:$color-2;
     }
   }
-  }
-  /* END NAVIGATION */ 
+}
+}
+
     h1{
       color: $font-color-2;
       position: absolute;
@@ -140,7 +139,7 @@ body{
 
 .button-1 {
   
-  background-color: $color-1;
+  background-color: lightblue;
   border-radius: 8px;
   border-style: none;
   color: $font-color-2;
@@ -336,7 +335,7 @@ footer{
 
 @media screen and (min-width: 556px) {
   
-  .content {
+  .content-nav {
     .toggler {
       display: none;
     }
@@ -453,6 +452,9 @@ footer{
 }
 
 }
+
+//Kontakt
+
 
 
   
