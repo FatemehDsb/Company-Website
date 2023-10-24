@@ -42,7 +42,7 @@ body{
    
 .content-nav {
   padding: 10px 20px;
-  background-color:lightblue;
+  background-color:$color-1;
   display: flex;
   justify-content:space-between;
   .logo {   
@@ -124,7 +124,7 @@ nav {
 
 .button-1 {
   
-  background-color: lightblue;
+  background-color: $color-1;
   border-radius: 8px;
   border-style: none;
   color: $font-color-2;
@@ -137,7 +137,7 @@ nav {
   line-height: 20px;
   outline: none;
   padding: 10px 16px;
-  margin-top: 300px;
+  margin-top: 350px;
   margin-left: 25px;
   text-align: center;
   box-shadow: $box-shadow-1;
@@ -154,8 +154,10 @@ nav {
   text-align: center; 
   align-items: center;
   display: flex;
+  border: 1px solid black;
 
   .om-oss-wrapper{
+    border: 1px solid black;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -381,50 +383,46 @@ footer{
  
 .om-oss{
  
-
+background-color: red;
   flex-direction: row;
   justify-content: space-around;
-  width: 100vw;
-  padding: 50px;
-  height: 100vh;
+  padding: 10px;
   align-content: center;
   align-items: center;
 
   .om-oss-wrapper{
+    border: 1px solid black;
     margin: auto;
     padding: auto;
     position: relative;
     flex-direction: row;
     justify-content: space-around;
     padding-top:100px;
-    min-width: 600px;
-    flex-wrap: wrap;
+   
 
     .om-oss-title{
-     width: 13%;
-     max-width: 200x;
      
+     
+     border: 1px solid black;
      position: absolute;
      top:60px;
+     
     }
 
     .om-oss-img{
       width:40%;
-      height:70%;
-      max-width: 500px;
+      border: 1px solid black;
+      
       padding: 0px;
-     
       margin: auto;
       padding: 0px;
       border-radius: 0px;
     }
     .om-oss-text{
-      margin: auto;
-      padding: auto;
-      height:70%;
-      width: 60%;
+      border: 1px solid rgb(7, 5, 5);
+       width: 40%;
       p{
-        font-size:1.3rem;
+        font-size:1.1rem;
         padding: 30px;
       }
       width: 50%;
