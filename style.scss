@@ -208,11 +208,11 @@ nav {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-color: $color-1;
+    
     
 
     .service {
-      border: 1px solid $font-color-2;
+      border: 1px solid $font-color-1;
 
       border-radius: 20px;
       padding: 20px;
@@ -222,8 +222,9 @@ nav {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      max-width: 300px;
-      min-width:200px;
+      
+    
+      
 
       @include button-Style();
 
@@ -234,9 +235,11 @@ nav {
     
       h2{
         margin-bottom: 5px;
+        font-size: 0.9rem;
       }
       p{
         text-align: left;
+        font-size: 0.4rem;
       }
     }
   }

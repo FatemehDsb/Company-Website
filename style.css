@@ -242,7 +242,6 @@ a {
 }
 
 .team-content {
-  border: 1px solid black;
   width: 100%;
   margin: auto;
   padding: auto;
@@ -255,10 +254,10 @@ a {
 }
 
 .team-content img {
-  width: 100%;
+  width: 60%;
   height: auto;
-  border-radius: 15px;
-  margin-bottom: 15px;
+  border-radius: 100px;
+  margin-bottom: 5px;
 }
 
 .center h1 {
@@ -272,7 +271,7 @@ a {
   max-width: 200px;
   height: 200px;
   padding: 16px;
-  background-color: red;
+  background-color: rgb(181, 177, 177);
   border-radius: 15px;
   transition: all 0.38s ease;
 }
@@ -311,7 +310,6 @@ a {
     gap: 10px;
   }
   .team .team-content .box {
-    background-color: red;
     min-width: 100px;
   }
   .center h1 {
@@ -478,10 +476,9 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background-color: rgba(176, 136, 202, 0.555);
 }
 .service-section .service {
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.838);
   border-radius: 20px;
   padding: 20px;
   margin: 10px auto;
@@ -489,8 +486,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 300px;
-  min-width: 200px;
 }
 .service-section .service:hover {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -501,9 +496,11 @@ body {
 }
 .service-section .service h2 {
   margin-bottom: 5px;
+  font-size: 0.9rem;
 }
 .service-section .service p {
   text-align: left;
+  font-size: 0.4rem;
 }
 
 footer {

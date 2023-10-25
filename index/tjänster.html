@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    
+    <header class="header-nav">
+        <div class="content-nav">
+            <a class="logo" href="../index.html">
+                <img src="../images/White logo - no background.svg" alt="" width="100px">
+            </a>
+            <div class="toggler">
+                <button><img src="../images/menu-hamburger-svgrepo-com.svg" alt="" width="30px"></button>
+            </div>
+            
+            <!-- Start Navigation -->
+            
+            <nav>
+                <ul>
+                   <li>
+                      <a href="./om oss.html" class="active" >Om oss</a>
+                   </li>
+                    <li>
+                            <a href="./refrenser.html">Refrenser</a>
+                    </li>
+                     <li>
+                            <a href="#">Tjänster</a>
+                        </li>
+                        <li>
+                            <a href="./kontakt.html" >Kontakt</a>
+                        </li>
+                </ul>           
+            </nav>
+        </div> 
+      </header>
+
+      <div class="service-section">
+    
+    
+        <div class="service">
+        
+           <img src="./images/reshot-icon-programming-S6F9V5BTWG.svg" alt="" >
+           <h2>Service 1</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt est quis turpis consectetur, in sodales libero convallis.</p>
+         </div>
+        <div class="service">
+           <img src="./images/reshot-icon-development-FRBQW5KAVU.svg" alt="" >
+           <h2>Service 2</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt est quis turpis consectetur, in sodales libero convallis.</p>
+    </div>
+    <div class="service">
+           <img src="images/reshot-icon-web-programming-MD4LHYCT2W.svg" alt="" >
+           <h2>Service 3</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt est quis turpis consectetur, in sodales libero convallis.</p>
+    </div>
+    <div class="service">
+        
+        <img src="./images/reshot-icon-programming-S6F9V5BTWG.svg" alt="" >
+        <h2>Service 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt est quis turpis consectetur, in sodales libero convallis.</p>
+      </div>
+
+      <div class="service">
+        <img src="./images/reshot-icon-development-FRBQW5KAVU.svg" alt="" >
+        <h2>Service 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt est quis turpis consectetur, in sodales libero convallis.</p>
+ </div>
+ <div class="service">
+        <img src="images/reshot-icon-web-programming-MD4LHYCT2W.svg" alt="" >
+        <h2>Service 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt est quis turpis consectetur, in sodales libero convallis.</p>
+ </div>
+</div>
+
+
+
+      <script>
+        $(function() {
+            $('.toggler').on('click', function() {
+                $('nav').slideToggle(500);
+          });
+        });</script>
+</body>
+</html>
