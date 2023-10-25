@@ -578,7 +578,7 @@ footer .text-footer {
     margin: auto;
   }
   .service-section {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
