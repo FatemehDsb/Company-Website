@@ -478,7 +478,7 @@ body {
   padding: 20px;
 }
 .service-section .service {
-  border: 1px solid rgba(0, 0, 0, 0.838);
+  background-color: rgba(151, 251, 234, 0.279);
   border-radius: 20px;
   padding: 20px;
   margin: 10px auto;
@@ -486,21 +486,37 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 3px;
 }
 .service-section .service:hover {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
 .service-section .service img {
-  max-width: 50px;
+  max-width: 140px;
 }
 .service-section .service h2 {
   margin-bottom: 5px;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .service-section .service p {
   text-align: left;
-  font-size: 0.4rem;
+  font-size: 0.8rem;
+  color: #444040;
+}
+.service-section .service button {
+  background-color: rgb(207, 66, 207);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 130px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #fff;
+}
+.service-section .service button:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
 footer {
@@ -587,7 +603,6 @@ footer .text-footer {
   }
   .service-section .service {
     max-width: 300px;
-    min-width: 300px;
   }
   .service-section .service p {
     font-size: 0.8rem;
