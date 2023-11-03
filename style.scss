@@ -155,7 +155,7 @@ nav {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding-top:40px;
+ 
   height: 100vh;
   
 
@@ -163,9 +163,9 @@ nav {
     
     p{
       color: $font-color-1;
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       text-align: center;
-      padding: 6px;
+      padding-top: 25px;
            }
   }
  
@@ -202,47 +202,66 @@ nav {
   
   
 
+.section-effect{
+  background-color: $color-1;
+  width:100%;
+  height:100px;
 
+  .service-title{
+   
+    p{
+      text-align: center;
+    color: $font-color-1;
+      font-size: 1.5rem;
+      padding-top:25px;
+      font-weight: 500;
+      
+    }
+  } 
+}
 
   //service
 
-
+   
   .service-section {
     width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
     padding: 20px;
-   
     
+
+
+   
     
 
     .service {
+      
       background-color: $color-2;
       border-radius: 20px;
       padding: 20px;
       margin: 10px auto;
-      
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap:3px;
+      gap:2px;
       @include button-Style();
 
       img{
-        max-width: 140px;
+        max-width: 160px;
         
       }
     
       h2{
-        margin-bottom: 5px;
+        
         font-size: 1rem;
       }
       p{
         text-align: left;
         font-size: 0.8rem;
         color: #444040;
+       padding:5px 20px;
       }
       button{
         background-color:rgb(176,136,202);
@@ -352,22 +371,29 @@ footer{
       display: inline-block !important; /* prevent the nav to hide when resize */
       position: relative;
       max-width:70%;
-      margin-left: 30px;
+      left: 260px;
+      
       ul{
+        max-width:500px;
+        align-content: center;
+       
+        
         display: flex;
         justify-content: space-around;
         li{
           display: inline-block;
-          border: 1px solid $font-color-2;
+         
           text-align: center;
           padding:auto;
-          width:150px;
+          width:120px;
           border-radius: 15px;
           @include button-Style();
           a{
             text-align: center;
             padding: auto;
             margin: auto;
+            color: #fff;
+            font-size: 0.9rem;
           }
         }
       }

@@ -34,14 +34,13 @@ header nav ul {
   list-style: none;
 }
 header nav ul li .active {
-  color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.838);
   text-align: center;
 }
 header nav ul li a {
   margin-left: 70px;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.838);
-  font-size: 18px;
   line-height: 40px;
   transition: 0.3s ease-out;
 }
@@ -250,7 +249,6 @@ a {
   align-items: center;
   gap: 2rem;
   text-align: center;
-  margin-top: 4rem;
 }
 
 .team-content img {
@@ -260,35 +258,27 @@ a {
   margin-bottom: 5px;
 }
 
-.center h1 {
-  color: #0a0a0a;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
 .box {
   width: 80%;
-  max-width: 200px;
-  height: 200px;
+  max-width: 300px;
   padding: 16px;
-  background-color: rgb(181, 177, 177);
-  border-radius: 15px;
+  background-color: rgba(176, 136, 202, 0.176);
+  border-radius: 30px;
   transition: all 0.38s ease;
 }
 
 .box h3 {
   font-size: 23px;
   font-weight: 300;
-  color: #fff;
+  color: #0f0f0f;
   margin-bottom: 8px;
 }
 
 .box h5 {
   font-size: 15px;
-  font-weight: 200;
-  color: #6d6c6f;
+  font-weight: 400;
+  color: #000000;
   margin-bottom: 15px;
-  letter-spacing: 2px;
 }
 
 .box:hover {
@@ -298,12 +288,11 @@ a {
 
 @media (min-width: 768px) {
   .team {
-    border: 1px solid blue;
     width: 100%;
     height: auto;
   }
   .team .team-content {
-    width: 70%;
+    width: 80%;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -436,14 +425,13 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
   height: 100vh;
 }
 .om-oss .om-oss-title p {
   color: rgba(0, 0, 0, 0.838);
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-align: center;
-  padding: 6px;
+  padding-top: 25px;
 }
 .om-oss .om-oss-wrapper {
   display: flex;
@@ -467,6 +455,19 @@ body {
   text-align: left;
 }
 
+.section-effect {
+  background-color: rgba(176, 136, 202, 0.555);
+  width: 100%;
+  height: 100px;
+}
+.section-effect .service-title p {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.838);
+  font-size: 1.5rem;
+  padding-top: 25px;
+  font-weight: 500;
+}
+
 .service-section {
   width: 100%;
   margin: auto;
@@ -483,23 +484,23 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3px;
+  gap: 2px;
 }
 .service-section .service:hover {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
 .service-section .service img {
-  max-width: 140px;
+  max-width: 160px;
 }
 .service-section .service h2 {
-  margin-bottom: 5px;
   font-size: 1rem;
 }
 .service-section .service p {
   text-align: left;
   font-size: 0.8rem;
   color: #444040;
+  padding: 5px 20px;
 }
 .service-section .service button {
   background-color: rgb(176, 136, 202);
@@ -567,18 +568,19 @@ footer .text-footer {
     display: inline-block !important; /* prevent the nav to hide when resize */
     position: relative;
     max-width: 70%;
-    margin-left: 30px;
+    left: 260px;
   }
   .content-nav nav ul {
+    max-width: 500px;
+    align-content: center;
     display: flex;
     justify-content: space-around;
   }
   .content-nav nav ul li {
     display: inline-block;
-    border: 1px solid rgb(255, 255, 255);
     text-align: center;
     padding: auto;
-    width: 150px;
+    width: 120px;
     border-radius: 15px;
   }
   .content-nav nav ul li:hover {
@@ -589,6 +591,8 @@ footer .text-footer {
     text-align: center;
     padding: auto;
     margin: auto;
+    color: #fff;
+    font-size: 0.9rem;
   }
   .service-section {
     width: 80%;
