@@ -49,15 +49,15 @@ header nav ul:hover :hover {
 }
 
 .container-form {
-  width: 70%;
+  width: 100%;
   margin: 30px auto;
+  padding: 30px;
   display: flex;
   flex-direction: column;
 }
 .container-form .text-form-wrapper {
+  border: 1px solid yellow;
   margin: auto;
-  width: 90%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -71,22 +71,24 @@ header nav ul:hover :hover {
 .container-form .text-form-wrapper img {
   width: 70%;
   max-width: 400px;
+  border-radius: 100px;
 }
 .container-form .text-form-wrapper .content-text {
   padding: 10px 20px;
+  max-width: 600px;
 }
 .container-form .text-form-wrapper .content-text p .bold {
   font-size: 1.2rem;
   font-family: sans-serif;
 }
 .container-form .contact-form {
-  background-color: #ffffff;
+  background-color: rgb(254, 204, 1);
   border-radius: 10px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-  width: 100%;
+  width: 80%;
   max-width: 400px;
   padding: 30px;
   text-align: center;
+  margin-top: 20px;
 }
 .container-form .contact-form h2 {
   color: #333;
@@ -114,7 +116,7 @@ header nav ul:hover :hover {
 .container-form button {
   width: 100%;
   padding: 10px;
-  background-color: #007bff;
+  background-color: rgba(176, 136, 202, 0.555);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -122,15 +124,25 @@ header nav ul:hover :hover {
   transition: background-color 0.3s;
 }
 .container-form button:hover {
-  background-color: #0056b3;
+  background-color: rgba(151, 251, 234, 0.279);
 }
 
 @media screen and (min-width: 768px) {
   .container-form {
     flex-direction: row;
+    border: 1px solid red;
+  }
+  .container-form .text-form-wrapper {
+    width: 100%;
+  }
+  .container-form .text-form-wrapper img {
+    max-width: 200px;
+  }
+  .container-form .text-form-wrapper .content-text {
+    max-width: 200px;
   }
   .container-form .contact-form {
-    width: 80%;
+    width: 50%;
   }
 }
 * {
@@ -518,7 +530,7 @@ body {
 }
 
 footer {
-  background-color: darkgray;
+  background-color: rgb(95, 94, 94);
   height: 200px;
 }
 footer .footer-wrapper {
@@ -527,7 +539,7 @@ footer .footer-wrapper {
   width: 100%;
   justify-content: space-around;
   margin: auto;
-  padding: 10px;
+  padding-top: 30px;
   padding-left: 40px;
 }
 footer .footer-wrapper .logo-footer img {
