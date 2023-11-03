@@ -154,38 +154,43 @@ nav {
   text-align: center; 
   align-items: center;
   display: flex;
-  border: 1px solid black;
+  flex-direction: column;
+  padding-top:40px;
+  height: 100vh;
+  
+
+  .om-oss-title{
+    
+    p{
+      color: $font-color-1;
+      font-size: 1.7rem;
+      text-align: center;
+      padding: 6px;
+           }
+  }
+ 
 
   .om-oss-wrapper{
-    border: 1px solid black;
-    height: 100vh;
+   
+    
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     gap:10px;
     
-    
-    
-    .om-oss-title{
-      text-align: center;
-      font-family:  sans-serif; 
-        p{
-    color: $font-color-1;
-    font-size: 2rem;
-    text-align: center;
-    padding: 6px;
-         }
-    }
+   
     .om-oss-img{
       img{
         width:60%;
-        max-width: 400px;
+        max-width: 900px;
         border-radius: 100px;
+        
       }
     }
     .om-oss-text{
      width: 70%;
+     max-width: 800px;
      margin: 0 auto;
       p{
         font-size: 0.9rem;
@@ -240,7 +245,7 @@ nav {
         color: #444040;
       }
       button{
-        background-color:rgb(207, 66, 207);
+        background-color:rgb(176,136,202);
         border: none;
         border-radius: 10px;
         padding: 10px;
@@ -398,40 +403,39 @@ footer{
  
 .om-oss{
  
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
+
+ .om-oss-title{
+   
+   text-align: center;
+ }
  
 
   .om-oss-wrapper{
-    
-    margin: 0 auto;
-    padding: 60px;
-    position: relative;
+    padding: 10px;
+   align-content: center;
+   margin: auto;
     flex-direction: row;
     justify-content: space-around;
    
-    .om-oss-title{
-     position: absolute;
-     top:60px;  
-    }
+    
 
     .om-oss-img{
-      min-width: 600px;
-      padding: 0px auto;
+     
+      width:70%;
+      max-width: 700px;
       margin: auto;
+      
     }
     .om-oss-text{
       
-      min-width: 500px;
+      width:70%;
+      max-width: 500px;
       text-align: center;
-      padding: 20px;
-      max-width: 400px;
-      margin-top: 130px;
+      margin: auto;
+      
       p{
-        font-size:1.2rem;
-        padding: 10px;
+        font-size:1rem;
+        
       }
     }    
    
