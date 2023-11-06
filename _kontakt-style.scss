@@ -14,8 +14,6 @@
  
 
   .text-form-wrapper{
-    
-    border: 1px solid yellow;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -24,9 +22,8 @@
     align-content: center;
 
     .contact-title{
-      
       p{
-        font-size: 2rem;
+      font-size: 2rem;
       text-align: center;
       }
     }
@@ -45,8 +42,6 @@
       max-width: 600px;
      
       p{
-
-      
         .bold{
           font-size: 1.2rem;
           font-family: sans-serif;
@@ -58,9 +53,9 @@
 
 .contact-form {
   
-  background-color: rgb(254,204,1);
+  background-color: rgba(254, 203, 1, 0.555);
   border-radius: 10px;
-  
+  margin: auto;
   width: 80%;
   max-width: 400px;
   padding: 30px;
@@ -70,7 +65,7 @@
 
 .contact-form h2 {
   color: #333;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
@@ -88,7 +83,7 @@
 .form-group textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 5px;
  
 }
@@ -100,7 +95,7 @@
 button {
   width: 100%;
   padding: 10px;
-  background-color: $color-1;
+  background-color:rgb(173,132,200);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -109,24 +104,22 @@ button {
 }
 
 button:hover {
-  background-color: $color-2;
+  background-color: rgb(12,204,204);
 }
 }
 
 @media screen and (min-width: 768px) {
   .container-form{
     flex-direction: row;
-    border: 1px solid red;
-    
+  
 
-    .text-form-wrapper{
-      
+    .text-form-wrapper{      
       width: 100%;
       img{
-        max-width:200px;
+        max-width:260px;
       }
       .content-text{
-        max-width: 200px;
+        max-width: 500px;
       }
     }
    

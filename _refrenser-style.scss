@@ -22,7 +22,7 @@ a{
         align-items: center;
 
         h1{
-            font-size: 2.2rem;
+            font-size: 1.7rem;
             font-weight:500;
             background-color: lightblue;
             color: black;
@@ -32,7 +32,7 @@ a{
             font-size: 1.3rem;
             color: black;
             margin-bottom: 10px;
-            letter-spacing: 10px;
+            letter-spacing: 3px;
             text-transform: uppercase;
         }
         
@@ -44,10 +44,11 @@ a{
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        
        
 
         .review-box{
-            
+            border-radius: 25px;
             min-width: 200px;
             max-width: 400px;
            
@@ -69,8 +70,6 @@ a{
                 justify-content: space-between;
                 align-items: center;
                 margin-bottom: 20px;
-
-               
 
             .profile-img{
                 width: 50px;

@@ -80,16 +80,18 @@ nav {
   a {
     margin-left: 70px;
     text-decoration: none;
-    color:$font-color-1;
-    font-size: 18px;
+    color:$font-color-2;
+    font-size: 15px;
+    font-weight: 500;
     line-height: 40px;
+    
     transition: 0.3s ease-out;
   }
 }
 
   &:hover{
     :hover {
-      color:$color-2;
+      color:#000000;
     }
   }
 }
@@ -124,7 +126,7 @@ nav {
 
 .button-1 {
   
-  background-color: $color-1;
+  background-color: rgba(12, 204, 204, 0.669);
   border-radius: 8px;
   border-style: none;
   color: $font-color-2;
@@ -155,18 +157,21 @@ nav {
   align-items: center;
   display: flex;
   flex-direction: column;
- 
   height: 100vh;
   
 
   .om-oss-title{
     
     p{
-      color: $font-color-1;
-      font-size: 1.5rem;
       text-align: center;
-      padding-top: 25px;
-           }
+      color: $font-color-1;
+       font-size: 1.6rem;
+       padding-top:40px;
+       padding-bottom: 20px;
+       font-weight: 400;
+       letter-spacing: 3px;
+       
+    }
   }
  
 
@@ -185,42 +190,42 @@ nav {
         width:60%;
         max-width: 900px;
         border-radius: 100px;
-        
       }
     }
     .om-oss-text{
-     width: 70%;
+     width: 80%;
      max-width: 800px;
      margin: 0 auto;
+     background-color:rgba(173, 132, 200, 0.648) ;
+     border-radius: 25PX;
+     padding: 20px;
       p{
         font-size: 0.9rem;
         text-align: left;
+        color: #393838;
       }
     }
   }
 }
   
-  
+  //service  
 
-.section-effect{
-  background-color: $color-1;
-  width:100%;
-  height:100px;
 
   .service-title{
    
     p{
       text-align: center;
-    color: $font-color-1;
-      font-size: 1.5rem;
-      padding-top:25px;
+     color: $font-color-1;
+      font-size: 1.6rem;
+      margin-top: 120px;
+      margin-bottom: 40px;
       font-weight: 500;
+      letter-spacing: 3px;
       
     }
-  } 
 }
 
-  //service
+
 
    
   .service-section {

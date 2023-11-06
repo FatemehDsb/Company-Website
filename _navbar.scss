@@ -6,7 +6,11 @@ header{
     background-color:$color-1;
     display: flex;
     justify-content:space-between;
-    .logo {   
+    .logo {  
+      img{
+        width:100px;
+      } 
+      
      @include button-Style();
     }
     .toggler {
@@ -18,6 +22,10 @@ header{
      button{
       background-color: transparent;
       border: none;
+
+      img{
+        width:35px;
+      }
       
   @include button-Style()
      }
