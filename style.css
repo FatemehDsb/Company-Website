@@ -440,16 +440,14 @@ body {
   flex-direction: column;
   height: 100vh;
 }
-.om-oss .om-oss-title {
-  padding-top: 40px;
-}
 .om-oss .om-oss-title p {
-  text-align: center;
+  text-align: left;
+  padding: 30px;
   color: rgba(0, 0, 0, 0.838);
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   margin-top: 20px;
-  font-weight: 400;
-  letter-spacing: 3px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 .om-oss .om-oss-wrapper {
   display: flex;
@@ -464,12 +462,11 @@ body {
   border-radius: 100px;
 }
 .om-oss .om-oss-wrapper .om-oss-text {
-  width: 80%;
+  width: 100%;
   max-width: 700px;
   margin: 0 auto;
-  background-color: rgba(173, 132, 200, 0.404);
   border-radius: 25PX;
-  padding: 20px;
+  padding: 30px;
 }
 .om-oss .om-oss-wrapper .om-oss-text p {
   font-size: 0.9rem;
@@ -489,7 +486,6 @@ body {
   text-align: center;
   align-items: center;
   margin-top: 60px;
-  margin-bottom: 30px;
 }
 .service-title p {
   color: rgba(0, 0, 0, 0.838);

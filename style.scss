@@ -162,15 +162,16 @@ nav {
   
 
   .om-oss-title{
-    padding-top: 40px;
+    
     
     p{
-      text-align: center;
+      text-align: left;
+      padding:30px;
       color: $font-color-1;
-       font-size: 1.6rem;
+       font-size: 1.3rem;
        margin-top: 20px;
-       font-weight: 400;
-       letter-spacing: 3px; 
+       font-weight: 600;
+       letter-spacing: 1px; 
     }
   }
  
@@ -192,12 +193,13 @@ nav {
       }
     }
     .om-oss-text{
-     width: 80%;
+     width: 100%;
+     
      max-width: 700px;
      margin: 0 auto;
-     background-color:rgba(173, 132, 200, 0.404) ;
+    
      border-radius: 25PX;
-     padding: 20px;
+     padding: 30px;
       p{
         font-size: 0.9rem;
         text-align: left;
@@ -226,7 +228,7 @@ nav {
     text-align: center;
     align-items: center;
     margin-top: 60px;
-    margin-bottom: 30px;
+    
    
     p{
      
