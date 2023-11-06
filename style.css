@@ -440,12 +440,14 @@ body {
   flex-direction: column;
   height: 100vh;
 }
+.om-oss .om-oss-title {
+  padding-top: 40px;
+}
 .om-oss .om-oss-title p {
   text-align: center;
   color: rgba(0, 0, 0, 0.838);
   font-size: 1.6rem;
-  padding-top: 40px;
-  padding-bottom: 20px;
+  margin-top: 20px;
   font-weight: 400;
   letter-spacing: 3px;
 }
@@ -463,9 +465,9 @@ body {
 }
 .om-oss .om-oss-wrapper .om-oss-text {
   width: 80%;
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
-  background-color: rgba(173, 132, 200, 0.648);
+  background-color: rgba(173, 132, 200, 0.404);
   border-radius: 25PX;
   padding: 20px;
 }
@@ -475,13 +477,24 @@ body {
   color: #393838;
 }
 
-.service-title p {
+.between-image {
+  margin-top: 100px;
+}
+.between-image img {
+  width: 100%;
+  height: auto;
+}
+
+.service-title {
   text-align: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.service-title p {
   color: rgba(0, 0, 0, 0.838);
   font-size: 1.6rem;
-  margin-top: 120px;
-  margin-bottom: 40px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 3px;
 }
 
@@ -611,6 +624,9 @@ footer .text-footer {
     color: #fff;
     font-size: 0.9rem;
   }
+  .service-title p {
+    font-size: 2.2rem;
+  }
   .service-section {
     width: 80%;
     display: flex;
@@ -630,6 +646,10 @@ footer .text-footer {
   }
   .om-oss .om-oss-title {
     text-align: center;
+    margin-top: 40px;
+  }
+  .om-oss .om-oss-title p {
+    font-size: 2.2rem;
   }
   .om-oss .om-oss-wrapper {
     padding: 10px;
@@ -648,8 +668,9 @@ footer .text-footer {
     max-width: 500px;
     text-align: center;
     margin: auto;
+    background-color: white;
   }
   .om-oss .om-oss-wrapper .om-oss-text p {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }/*# sourceMappingURL=style.css.map */

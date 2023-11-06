@@ -158,26 +158,25 @@ nav {
   display: flex;
   flex-direction: column;
   height: 100vh;
+ 
   
 
   .om-oss-title{
+    padding-top: 40px;
     
     p{
       text-align: center;
       color: $font-color-1;
        font-size: 1.6rem;
-       padding-top:40px;
-       padding-bottom: 20px;
+       margin-top: 20px;
        font-weight: 400;
-       letter-spacing: 3px;
-       
+       letter-spacing: 3px; 
     }
   }
  
 
   .om-oss-wrapper{
    
-    
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -194,9 +193,9 @@ nav {
     }
     .om-oss-text{
      width: 80%;
-     max-width: 800px;
+     max-width: 700px;
      margin: 0 auto;
-     background-color:rgba(173, 132, 200, 0.648) ;
+     background-color:rgba(173, 132, 200, 0.404) ;
      border-radius: 25PX;
      padding: 20px;
       p{
@@ -207,26 +206,38 @@ nav {
     }
   }
 }
+
+
+
+.between-image{
+  margin-top: 100px;
+  img{
+    width: 100%;
+    height:auto;
+  }
+ 
+}
   
   //service  
 
 
   .service-title{
+  
+    text-align: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
    
     p{
-      text-align: center;
+     
      color: $font-color-1;
       font-size: 1.6rem;
-      margin-top: 120px;
-      margin-bottom: 40px;
-      font-weight: 500;
+      font-weight: 400;
       letter-spacing: 3px;
+      
       
     }
 }
-
-
-
    
   .service-section {
     width: 100%;
@@ -401,7 +412,12 @@ footer{
       }
     }
   }
-  
+  .service-title{
+   
+    p{
+      font-size: 2.2rem;
+     }
+  }
   .service-section {
     width: 80%;
     display: flex;
@@ -435,6 +451,11 @@ footer{
  .om-oss-title{
    
    text-align: center;
+   margin-top: 40px;
+   p{
+    font-size: 2.2rem;
+   }
+   
  }
  
 
@@ -460,9 +481,10 @@ footer{
       max-width: 500px;
       text-align: center;
       margin: auto;
+      background-color: white;
       
       p{
-        font-size:1rem;
+        font-size:1.3rem;
         
       }
     }    
