@@ -157,32 +157,10 @@ nav {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-
-  .button-1 {
-  
-    background-color: rgba(12, 204, 204, 0.669);
-    border-radius: 8px;
-    border-style: none;
-    color: $font-color-2;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 14px;
-    font-weight: 500;
-    height: 40px;
-    width: 150px;
-    line-height: 20px;
-    outline: none;
-    padding: 10px 16px;
-    
-    text-align: center;
-    box-shadow: $box-shadow-1;
-    border: 1px solid $font-color-2;
-  }
-  .button-1:hover{
-    @include button-Style-2()
-  }
+  border: 1px solid red;
  
+
+  
   
 
   .om-oss-title{
@@ -218,8 +196,7 @@ nav {
     }
     .om-oss-text{
     
-     width: 100%;
-     
+     width: 100%; 
      max-width: 700px;
      margin: 0 auto;
      border-radius: 25PX;
@@ -231,13 +208,38 @@ nav {
       }
     }
   }
+
+ 
   
+}
+.button-2 {
+  
+  background-color: rgba(12, 204, 204, 0.669);
+  border-radius: 10px;
+  border-style: none;
+  color: $font-color-2;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  height: 40px;
+  width: 150px;
+  line-height: 20px;
+  outline: none;
+  padding: 10px 16px;
+  margin-left: 20px;
+  box-shadow: $box-shadow-1;
+  border: 1px solid $font-color-2;
+}
+.button-1:hover{
+  @include button-Style-2()
 }
 
 
 
 .between-image{
  border: 1px solid black;
+ margin:20px;
   
   img{
     width: 100%;
