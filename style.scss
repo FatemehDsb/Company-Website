@@ -158,6 +158,30 @@ nav {
   display: flex;
   flex-direction: column;
   height: 100vh;
+
+  .button-1 {
+  
+    background-color: rgba(12, 204, 204, 0.669);
+    border-radius: 8px;
+    border-style: none;
+    color: $font-color-2;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    width: 150px;
+    line-height: 20px;
+    outline: none;
+    padding: 10px 16px;
+    
+    text-align: center;
+    box-shadow: $box-shadow-1;
+    border: 1px solid $font-color-2;
+  }
+  .button-1:hover{
+    @include button-Style-2()
+  }
  
   
 
@@ -177,7 +201,6 @@ nav {
  
 
   .om-oss-wrapper{
-   
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -186,6 +209,7 @@ nav {
     
    
     .om-oss-img{
+      
       img{
         width:60%;
         max-width: 900px;
@@ -193,11 +217,11 @@ nav {
       }
     }
     .om-oss-text{
+    
      width: 100%;
      
      max-width: 700px;
      margin: 0 auto;
-    
      border-radius: 25PX;
      padding: 30px;
       p{
@@ -207,12 +231,14 @@ nav {
       }
     }
   }
+  
 }
 
 
 
 .between-image{
-  margin-top: 100px;
+ border: 1px solid black;
+  
   img{
     width: 100%;
     height:auto;

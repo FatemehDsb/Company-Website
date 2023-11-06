@@ -440,6 +440,27 @@ body {
   flex-direction: column;
   height: 100vh;
 }
+.om-oss .button-1 {
+  background-color: rgba(12, 204, 204, 0.669);
+  border-radius: 8px;
+  border-style: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  width: 150px;
+  line-height: 20px;
+  outline: none;
+  padding: 10px 16px;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgb(255, 255, 255);
+}
+.om-oss .button-1:hover:hover {
+  background-color: rgba(254, 203, 1, 0.258);
+}
 .om-oss .om-oss-title p {
   text-align: left;
   padding: 30px;
@@ -475,7 +496,7 @@ body {
 }
 
 .between-image {
-  margin-top: 100px;
+  border: 1px solid black;
 }
 .between-image img {
   width: 100%;
