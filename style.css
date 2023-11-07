@@ -70,8 +70,12 @@ header nav ul:hover :hover {
   align-content: center;
 }
 .container-form .text-form-wrapper .contact-title p {
-  font-size: 2rem;
   text-align: center;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
 }
 .container-form .text-form-wrapper img {
   width: 70%;
@@ -182,11 +186,12 @@ a {
   padding: 10px 20px;
 }
 #reviews .review-heading span {
-  font-size: 1.3rem;
   color: black;
-  margin-bottom: 10px;
-  letter-spacing: 3px;
   text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 #reviews .review-box-container {
   display: flex;
@@ -253,10 +258,23 @@ a {
   color: yellow;
 }
 
+.title-team {
+  padding-left: 30px;
+  text-align: center;
+  padding-left: 30px;
+  color: rgba(0, 0, 0, 0.838);
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
 .team {
   width: 100%;
-  margin-top: 70px;
-  margin-bottom: 50px;
+  background-color: rgba(213, 209, 216, 0.47);
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .team-content {
@@ -281,7 +299,7 @@ a {
   width: 80%;
   max-width: 300px;
   padding: 16px;
-  background-color: rgba(12, 204, 204, 0.395);
+  background-color: rgba(214, 190, 231, 0.368);
   border-radius: 30px;
   transition: all 0.38s ease;
 }
@@ -438,26 +456,27 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  height: 100vh;
 }
 .om-oss .om-oss-title p {
   text-align: left;
-  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
   color: rgba(0, 0, 0, 0.838);
   font-size: 1.3rem;
   margin-top: 20px;
   font-weight: 600;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .om-oss .om-oss-wrapper {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-content: center;
   gap: 10px;
 }
 .om-oss .om-oss-wrapper .om-oss-img img {
-  width: 60%;
+  width: 50%;
   max-width: 900px;
   border-radius: 100px;
 }
@@ -466,16 +485,16 @@ body {
   max-width: 700px;
   margin: 0 auto;
   border-radius: 25PX;
-  padding: 30px;
+  padding: 0 30px;
 }
 .om-oss .om-oss-wrapper .om-oss-text p {
   font-size: 0.9rem;
   text-align: left;
   color: #393838;
 }
-
-.button-2 {
-  background-color: rgba(12, 204, 204, 0.669);
+.om-oss .om-oss-wrapper .om-oss-text .button-2 {
+  margin-top: 10px;
+  background-color: rgb(12, 204, 204);
   border-radius: 10px;
   border-style: none;
   color: rgb(255, 255, 255);
@@ -483,23 +502,17 @@ body {
   font-family: inherit;
   font-size: 14px;
   font-weight: 400;
-  height: 40px;
-  width: 150px;
   line-height: 20px;
-  outline: none;
   padding: 10px 16px;
-  margin-left: 20px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border: 1px solid rgb(255, 255, 255);
 }
-
-.button-1:hover:hover {
+.om-oss .om-oss-wrapper .om-oss-text .button-1:hover:hover {
   background-color: rgba(254, 203, 1, 0.258);
 }
 
 .between-image {
-  border: 1px solid black;
-  margin: 20px;
+  margin: 5px 30px;
 }
 .between-image img {
   width: 100%;
@@ -507,15 +520,33 @@ body {
 }
 
 .service-title {
-  text-align: center;
-  align-items: center;
-  margin-top: 60px;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  text-transform: uppercase;
 }
 .service-title p {
   color: rgba(0, 0, 0, 0.838);
-  font-size: 1.6rem;
-  font-weight: 400;
-  letter-spacing: 3px;
+  font-size: 1.3rem;
+  margin-top: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.service-title-2 {
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+.service-title-2 p {
+  color: rgba(0, 0, 0, 0.838);
+  font-size: 1.3rem;
+  margin-top: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .service-section {
@@ -523,7 +554,7 @@ body {
   margin: auto;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 30px;
 }
 .service-section .service {
   background-color: rgba(151, 251, 234, 0.279);
@@ -568,8 +599,7 @@ body {
 }
 
 footer {
-  background-color: rgb(95, 94, 94);
-  height: 200px;
+  background-color: rgb(81, 61, 85);
 }
 footer .footer-wrapper {
   display: flex;
@@ -603,11 +633,14 @@ footer .footer-wrapper .undersidan-footer ul a {
   font-family: "Roboto", sans-serif;
 }
 footer .text-footer {
-  margin-top: 100px;
   text-align: center;
   margin: auto;
-  margin-top: 10px;
   font-family: "Roboto", sans-serif;
+  margin-top: 100px;
+}
+footer .text-footer .attribute a {
+  color: white;
+  font-size: 0.4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -645,7 +678,12 @@ footer .text-footer {
     font-size: 0.9rem;
   }
   .service-title p {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .service-title-2 p {
+    font-size: 1.8rem;
+    text-align: center;
   }
   .service-section {
     width: 80%;
@@ -665,16 +703,17 @@ footer .text-footer {
     max-width: 100%;
   }
   .om-oss .om-oss-title {
-    text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
   .om-oss .om-oss-title p {
-    font-size: 2.2rem;
+    text-align: left;
+    font-size: 1.8rem;
   }
   .om-oss .om-oss-wrapper {
     padding: 10px;
-    align-content: center;
-    margin: auto;
+    align-content: left;
+    margin: 0 auto;
     flex-direction: row;
     justify-content: space-around;
   }
@@ -684,13 +723,12 @@ footer .text-footer {
     margin: auto;
   }
   .om-oss .om-oss-wrapper .om-oss-text {
-    width: 70%;
+    width: 80%;
     max-width: 500px;
     text-align: center;
     margin: auto;
-    background-color: white;
   }
   .om-oss .om-oss-wrapper .om-oss-text p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }/*# sourceMappingURL=style.css.map */

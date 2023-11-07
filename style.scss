@@ -157,23 +157,21 @@ nav {
   align-items: center;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
  
-
-  
-  
-
+  height: 100vh;
+ 
   .om-oss-title{
-    
-    
     p{
       text-align: left;
-      padding:30px;
+      padding-left:30px;
+      padding-right: 30px;
+      padding-top: 20px;
       color: $font-color-1;
        font-size: 1.3rem;
        margin-top: 20px;
        font-weight: 600;
        letter-spacing: 1px; 
+       text-transform: uppercase;
     }
   }
  
@@ -181,30 +179,51 @@ nav {
   .om-oss-wrapper{
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
+   
+    
     gap:10px;
     
    
     .om-oss-img{
+     
       
       img{
-        width:60%;
+        width:50%;
         max-width: 900px;
         border-radius: 100px;
       }
     }
     .om-oss-text{
-    
      width: 100%; 
      max-width: 700px;
      margin: 0 auto;
      border-radius: 25PX;
-     padding: 30px;
+     padding: 0 30px;
       p{
         font-size: 0.9rem;
         text-align: left;
         color: #393838;
+      }
+      .button-2 {
+        margin-top: 10px;
+        background-color:rgb(12,204,204);
+        border-radius: 10px;
+        border-style: none;
+        color: $font-color-2;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 400;
+        
+        line-height: 20px;
+       
+        padding: 10px 16px;
+        
+        box-shadow: $box-shadow-1;
+        border: 1px solid $font-color-2;
+      }
+      .button-1:hover{
+        @include button-Style-2()
       }
     }
   }
@@ -212,34 +231,13 @@ nav {
  
   
 }
-.button-2 {
-  
-  background-color: rgba(12, 204, 204, 0.669);
-  border-radius: 10px;
-  border-style: none;
-  color: $font-color-2;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: 400;
-  height: 40px;
-  width: 150px;
-  line-height: 20px;
-  outline: none;
-  padding: 10px 16px;
-  margin-left: 20px;
-  box-shadow: $box-shadow-1;
-  border: 1px solid $font-color-2;
-}
-.button-1:hover{
-  @include button-Style-2()
-}
+
 
 
 
 .between-image{
- border: 1px solid black;
- margin:20px;
+ 
+ margin:5px 30px;
   
   img{
     width: 100%;
@@ -253,20 +251,44 @@ nav {
 
   .service-title{
   
-    text-align: center;
-    align-items: center;
-    margin-top: 60px;
+    text-align: left;
+    padding-left:30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    
     
    
     p{
      
-     color: $font-color-1;
-      font-size: 1.6rem;
-      font-weight: 400;
-      letter-spacing: 3px;
+      color: $font-color-1;
+      font-size: 1.3rem;
+      margin-top: 20px;
+      font-weight: 600;
+      letter-spacing: 1px;
       
       
     }
+}
+.service-title-2{
+  
+  text-align: center;
+  padding-left:30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  text-transform: uppercase;
+  
+ 
+  p{
+   
+    color: $font-color-1;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+    
+  }
 }
    
   .service-section {
@@ -274,7 +296,7 @@ nav {
     margin: auto;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 30px;
     
 
 
@@ -331,8 +353,8 @@ nav {
   
 
 footer{
-  background-color: rgb(95, 94, 94);
-  height:200px;
+  background-color:rgb(81, 61, 85);
+  
 
 
 .footer-wrapper{
@@ -389,13 +411,21 @@ footer{
 
 }
 .text-footer{
-  margin-top: 100px;
+ 
   text-align: center;
   margin: auto;
-  
-  margin-top: 10px;
   font-family: 'Roboto', sans-serif;
+  margin-top: 100px;
+
   
+  .attribute {
+   
+    a{
+      color: white;
+      font-size: 0.4rem;
+    }
+    
+  }
 }
 }
 
@@ -445,7 +475,15 @@ footer{
   .service-title{
    
     p{
-      font-size: 2.2rem;
+      font-size: 1.8rem;
+      text-align: center;
+     }
+  }
+  .service-title-2{
+   
+    p{
+      font-size: 1.8rem;
+      text-align: center;
      }
   }
   .service-section {
@@ -477,13 +515,15 @@ footer{
  
 .om-oss{
  
-
  .om-oss-title{
-   
-   text-align: center;
-   margin-top: 40px;
+   margin-top: 30px;
+   margin-bottom: 20px;
+  
    p{
-    font-size: 2.2rem;
+   
+   
+    text-align: left;
+    font-size: 1.8rem;
    }
    
  }
@@ -491,30 +531,29 @@ footer{
 
   .om-oss-wrapper{
     padding: 10px;
-   align-content: center;
-   margin: auto;
+   align-content: left;
+   margin: 0 auto;
     flex-direction: row;
     justify-content: space-around;
    
-    
-
     .om-oss-img{
      
       width:70%;
       max-width: 700px;
       margin: auto;
+     
       
     }
     .om-oss-text{
       
-      width:70%;
+      width:80%;
       max-width: 500px;
       text-align: center;
       margin: auto;
-      background-color: white;
+     
       
       p{
-        font-size:1.3rem;
+        font-size:1.1rem;
         
       }
     }    
