@@ -456,7 +456,6 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 .om-oss .om-oss-title p {
   text-align: left;
